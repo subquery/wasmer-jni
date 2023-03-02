@@ -1,3 +1,4 @@
+#![allow(implied_bounds_entailment)]
 use core::{
     fmt::Debug,
     marker::PhantomData,

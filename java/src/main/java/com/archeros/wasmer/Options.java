@@ -27,47 +27,47 @@ public class Options {
     }
 
     public Options threads(boolean threads) {
-        this.threads = threads ? 0 : 1L;
+        this.threads = threads ? 1L: 0;
         return this;
     }
 
     public Options referenceTypes(boolean referenceTypes) {
-        this.referenceTypes = referenceTypes ? 0 : (1L << 1);
+        this.referenceTypes = referenceTypes ? (1L << 1): 0;
         return this;
     }
 
     public Options simd(boolean simd) {
-        this.simd = simd ? 0 : (1L << 2);
+        this.simd = simd ? (1L << 2): 0;
         return this;
     }
 
     public Options bulkMemory(boolean bulkMemory) {
-        this.bulkMemory = bulkMemory ? 0 : (1L << 3);
+        this.bulkMemory = bulkMemory ? (1L << 3): 0;
         return this;
     }
 
     public Options multiValue(boolean multiValue) {
-        this.multiValue = multiValue ? 0 : (1L << 4);
+        this.multiValue = multiValue ? (1L << 4): 0;
         return this;
     }
 
     public Options tailCall(boolean tailCall) {
-        this.multiValue = tailCall ? 0 : (1L << 5);
+        this.tailCall = tailCall ? (1L << 5): 0;
         return this;
     }
 
     public Options moduleLinking(boolean moduleLinking) {
-        this.moduleLinking = moduleLinking ? 0 : (1L << 6);
+        this.moduleLinking = moduleLinking ? (1L << 6): 0;
         return this;
     }
 
     public Options multiMemory(boolean multiMemory) {
-        this.multiMemory = multiMemory ? 0 : (1L << 7);
+        this.multiMemory = multiMemory ? (1L << 7): 0;
         return this;
     }
 
     public Options memory64(boolean memory64) {
-        this.memory64 = memory64 ? 0 : (1L << 8);
+        this.memory64 = memory64 ? (1L << 8): 0;
         return this;
     }
 
